@@ -1,0 +1,26 @@
+@import "~variables"
+.tabs-nav
+  border-bottom 1px solid $clr-grey-300
+.tabs-nav__item
+  position relative
+  display inline-block
+  padding: 4px 8px
+  cursor pointer
+  &.active
+    &:after
+      content ""
+      display block
+      position absolute
+      bottom 0
+      left 0
+      width 100%
+      border-bottom 4px solid $clr-indigo-800
+
+.tabs-content
+  display block
+  padding 8px
+  margin-top 16px
+  .tabs-content__item
+    display none
+    &.active
+      display block

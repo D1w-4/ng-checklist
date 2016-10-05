@@ -1,0 +1,6 @@
+label.checkbox-block(ng-repeat="tab in $ctrl.tabs" ng-class="{'checkbox-block_checked':tab.checked}")
+    input.checkbox-block__checkbox(type="checkbox"
+        ng-model="tab.checked"
+        ng-change="$ctrl.tabs.toggle(tab)"
+        ng-checked="tab.checked")
+    span.checkbox-block__label {{tab.label}}

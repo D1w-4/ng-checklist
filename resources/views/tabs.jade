@@ -1,0 +1,8 @@
+h1.page-title Выбранные сорта
+at-tabs
+    at-tab(ng-repeat="tab in $resolve.tabs | filter:{checked:true}" label="{{tab.label}}")
+        div(ng-bind-html="tab.content")
+
+div(ng-show="!($resolve.tabs | filter:{checked:true}).length")
+    | Нет ни одной активного сорта.
+    a(ui-sref="tabs-list") Добавить сорта

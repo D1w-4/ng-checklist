@@ -1,0 +1,23 @@
+{
+  "name": "Angular-checklist",
+  "description": "",
+  "main": "webpack.config.js",
+  "authors": [
+    "D1w.4 <mvk56@mail.ru>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "^4.2.0",
+    "angular": "^1.5.8",
+    "angular-ui-router": "0.3.1",
+    "oclazyload": "^1.0.9"
+  }
+}

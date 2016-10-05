@@ -1,0 +1,7 @@
+div.tabs-nav(ng-show="$ctrl.tabs.length")
+    div.tabs-nav__item(ng-repeat="tab in $ctrl.tabs"
+       ng-class="{active:tab.selected}"
+       ng-click="$ctrl.select(tab)") {{tab.label}}
+div.tabs-content
+    ng-transclude
+
